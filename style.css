@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Serif&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100vw;
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+}
+
+nav>li {
+    list-style: none;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    font-family: 'Koulen', cursive;
+}
+
+nav>img {
+    height: 2rem;
+    background-color: chartreuse;
+    margin-left: 1rem;
+}
+
+.item1 {
+    /* height: 100px;
+    width: 100px; */
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.item1:hover {
+    background-color: rgb(201, 225, 177);
+    cursor: pointer;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 3rem;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.heading {
+    margin-left: 4rem;
+
+}
+
+.heading>h1 {
+    font-family: 'Noto Serif', serif;
+}
+
+.image>img {
+width: 0px;
+transition: width 1s ease-in-out;
+}
+
+.bl {
+    border-left: 0px;
+}
+
+.br {
+    border-right: 0px;
+
+}
+
+.bu {
+    border-top: 0px;
+
+}
+
+.bb {
+    border-bottom: 0px;
+}
+
+.button {
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+#btn{
+font-size: 1.5rem;
+background-color: black;
+color: white;
+border-radius: 3px;
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: rgb(42, 59, 44);
+}
+@media screen and (max-width:533px){
+    .heading{
+        margin-left: 0px;
+        margin-top: 3rem;
+    }
+    .parent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+    
