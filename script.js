@@ -56,5 +56,6 @@ button.addEventListener("click",()=>{
         image.style.width="0px"
         gameInfo.textContent="";
         gameOver.pause();
+        container.addEventListener("click", game) 
     })
 })
